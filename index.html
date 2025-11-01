@@ -1,24 +1,19 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
 <!DOCTYPE html>
 <html>
     <head>
         <title>My Portfolio Website</title>
+        <link rel="stylesheet" href="index.css">
+        <!-- GSAP CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <!-- GSAP ScrollTrigger Plugin CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <!-- Three.js CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.165.0/three.min.js"></script>
+        <!-- Three.js FontLoader CDN -->
+        <script src="https://threejs.org/examples/js/loaders/FontLoader.js"></script>
     </head>
     <body>
+        <div id="threejs-container"></div>
         <h1>Sree Raj's Portfolio</h1>
         <h2>I am something of a web developer myself.</h2>
         <hr/>
@@ -28,5 +23,6 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
         <img src = "./assets/images/birthday-invite.png" height=200 alt="birthday invite project"/>
         <hr/>
         <p><a href = "./public/about.html">About Me</a> <a  href="./public/contact.html">Contact Me</a></p>
+        <script src="index.js"></script>
     </body>
 </html>
